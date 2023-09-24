@@ -1,0 +1,24 @@
+{
+  "build": {
+    "extra_flags": "-D__CH583M__",
+    "f_cpu": "250000000L",
+    "ldscript": "CH583M.ld",
+    "march": "CH583M",
+    "target": "GWT",
+    "variant": "CH583M",
+    "mcu": "CH583M"
+  },
+  "frameworks": [
+    "wch583m"
+  ],
+  "name": "CH583M",
+  "upload": {
+    "boot_mode": "jtag",
+    "commands": "load reqloop ioloop start wait",
+    "maximum_ram_size": 8388608,
+    "maximum_size": 67108864,
+    "protocol": "ftdi"
+  },
+  "url": "https://github.com/eoe2005/platformio_wch583m",
+  "vendor": "CH583M"
+}
