@@ -24,7 +24,7 @@ env = DefaultEnvironment()
 platform = env.PioPlatform()
 board_config = env.BoardConfig()
 
-SDK_DIR = platform.get_package_dir("framework-gap_sdk")
+SDK_DIR = platform.get_package_dir("platformio_wch583m_sdk")
 PULP_TOOLS_DIR = platform.get_package_dir("tool-pulp_tools")
 assert SDK_DIR and isdir(SDK_DIR)
 assert PULP_TOOLS_DIR and isdir(PULP_TOOLS_DIR)

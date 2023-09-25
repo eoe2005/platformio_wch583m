@@ -25,7 +25,7 @@ from platformio.builder.tools.platformio import SRC_FILTER_DEFAULT
 
 Import("env")
 
-SDK_DIR = env.PioPlatform().get_package_dir("framework-gap_sdk")
+SDK_DIR = env.PioPlatform().get_package_dir("platformio_wch583m_sdk")
 AUTOTILER_DIR = join(SDK_DIR, "tools", "autotiler")
 
 

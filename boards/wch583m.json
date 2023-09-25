@@ -1,17 +1,17 @@
 {
   "build": {
-    "extra_flags": "-D__CH583M__",
+    "extra_flags": "-D__WCH583M__",
     "f_cpu": "250000000L",
-    "ldscript": "CH583M.ld",
-    "march": "CH583M",
-    "target": "GWT",
-    "variant": "CH583M",
-    "mcu": "CH583M"
+    "ldscript": "Link.ld",
+    "march": "WCH583M",
+    "target": "WCH583M",
+    "variant": "WCH583M",
+    "mcu": "WCH583M"
   },
   "frameworks": [
-    "wch583m"
+    "platformio-wch583m-sdk"
   ],
-  "name": "CH583M",
+  "name": "WCH583M",
   "upload": {
     "boot_mode": "jtag",
     "commands": "load reqloop ioloop start wait",
@@ -20,5 +20,5 @@
     "protocol": "ftdi"
   },
   "url": "https://github.com/eoe2005/platformio_wch583m",
-  "vendor": "CH583M"
+  "vendor": "WCH583M"
 }
