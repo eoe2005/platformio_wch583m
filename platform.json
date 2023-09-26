@@ -6,8 +6,7 @@
   "license": "Apache-2.0",
   "keywords": [
       "dev-platform",
-      "WCH583M",
-      "platformio-wch583m-sdk"
+      "WCH583M"
   ],
   "engines": {
     "platformio": "^6"
@@ -18,9 +17,7 @@
   },
   "version": "1.1.0",
   "frameworks": {
-    "platformio_wch583m_sdk": {
-      "script": "builder/frameworks/mbed.py"
-    }
+    
     
   },
   "packages": {
@@ -28,6 +25,16 @@
       "type": "toolchain",
       "owner": "platformio",
       "version": "~1.70101.0"
+    },
+    "toolchain-riscv": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "https://github.com/Community-PIO-CH32V/toolchain-riscv-windows.git"
+    },
+    "tool-openocd-riscv-wch": {
+      "type": "uploader",
+      "owner": "community-ch32v",
+      "version": "~2.1100.230329"
     },
     "tool-pulp_tools": {
       "type": "uploader",

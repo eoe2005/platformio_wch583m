@@ -1,23 +1,37 @@
 {
   "build": {
-    "extra_flags": "-D__WCH583M__",
-    "f_cpu": "250000000L",
-    "ldscript": "Link.ld",
-    "march": "WCH583M",
-    "target": "WCH583M",
-    "variant": "WCH583M",
-    "mcu": "WCH583M"
+    "f_cpu": "20000000L",
+    "extra_flags": "-DCH58 -DCH58X -DCH583",
+    "hwids": [
+      [
+        "0x1A86",
+        "0x8010"
+      ]
+    ],
+    "ldscript": "Link_CH58x.ld",
+    "mabi": "ilp32",
+    "march": "rv32imac",
+    "mcu": "ch583m",
+    "series": "ch58x"
   },
-  "frameworks": [
-    "platformio-wch583m-sdk"
-  ],
+  "frameworks": [],
+  "debug": {
+    "onboard_tools": [
+      "wch-link"
+    ],
+    "openocd_config": "wch-riscv.cfg",
+    "svd_path": "CH58Xxx.svd"
+  },
   "name": "WCH583M",
   "upload": {
-    "boot_mode": "jtag",
-    "commands": "load reqloop ioloop start wait",
-    "maximum_ram_size": 8388608,
-    "maximum_size": 67108864,
-    "protocol": "ftdi"
+    "maximum_ram_size": 32768,
+    "maximum_size": 491520,
+    "protocols": [
+      "wch-link",
+      "minichlink",
+      "isp"
+    ],
+    "protocol": "wch-link"
   },
   "url": "https://github.com/eoe2005/platformio_wch583m",
   "vendor": "WCH583M"
